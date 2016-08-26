@@ -1,0 +1,24 @@
+package com.example;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+import org.hibernate.annotations.Entity;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ReservationServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ReservationServiceApplication.class, args);
+	}
+}
+
+
+@Entity
+class Reservation{
+	@Id @GeneratedValue
+	private Long id;
+	private String reservationName;
+}
