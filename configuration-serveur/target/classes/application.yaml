@@ -6,6 +6,6 @@ spring:
     config:
       server:
         git:
-          uri: file://${user.home}/config
+          uri: https://github.com/CarlKlagba/configuration-file
   application:
     name: CONFIGSERVER

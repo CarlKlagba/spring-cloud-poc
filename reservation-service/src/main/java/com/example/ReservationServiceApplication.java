@@ -4,11 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Import;
+
+import com.example.controller.ReservationController;
 
 @SpringBootApplication
 @EnableEurekaClient
-@ComponentScan("com.exemple")
+@ComponentScan(basePackageClasses = ReservationController.class)
 public class ReservationServiceApplication {
 
 	public static void main(String[] args) {
